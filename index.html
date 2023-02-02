@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi Thushiyandan - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/0148967ed9.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <h4>Swathi Thushiyandan</h4>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <b style="font-size: large;" class="icons" onclick="closemenu()">X</b>
+                </ul>
+                <b style="font-size: xx-large;" class="icons" onclick="openmenu()">≡</b>
+            </nav>
+            <div class="row align-items-center" id="head">
+                <div class="header-text">
+                    <p>Aspiring Software Engineer</p>
+                    <h1>Hey, I'm <span>Swathi</span>!</h1>
+                </div>
+                <div class="header-img">
+                        <img src="images/swathi-pfp.jpg" style="border-radius:50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="about-col-1">
+                    <img src="images/coding.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My coding journey started at the ripe age of 9 years-old, when I stumbled upon the virtual pet website, Neopets. 
+                        How did it start there? Well, one thing I learned throughout my software engineering journey is that some of the best opportunities come from the most unexpected places.
+                        Turns out, there was a whole graphic design community where you can develop websites to host your graphic design business. I was in awe of the artistis creations that people could make, and wanted to have my own little "business" as well.
+                        It definitely was a little tough at the beginning, but after doing a little bit of research on HTML, CSS, and GIMP, I had my own graphic design business going on, and that's what started my love of coding and design overall.
+                    </p>
+                    <br>
+                    <p>
+                        After taking a hiatus from coding and trying to figure out some other things I liked, I realized I had a strong liking towards anything that relied on my creativity.
+                        I would create music on GarageBand, edit videos of my friends' and my karaoke sessions, and overall just create innovative solutions to problems in my community.
+                        This really solidified my decision to be a software engineer to help others all around the world.
+                    </p>
+                    <br>
+                    <p>
+                        I truly believe that the learning journey is a never-ending one. As a current software engineering student at Western University, I've been actively growing through hackathons, clubs, competitions, and professional development opportunities.
+                        Besides HTML and CSS, some other languages I have learned along the way are Java, JavaScript, and Python, and I'm looking forward to learning many more technologies and languages throughout my journey.
+                    </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Western University, <span style="color: white;">Software Engineering, <i>BESc.</i></span></span>
+                                <br>Expected Graduation: 2026<br><b>Honours: </b> Dean's Honour List, Western Scholarship of Excellence 
+                                <br> - Currently completing Engineering Leadership and Innovation Certificate
+                                <br><br>
+                                <span>Relevant Coursework: </span>
+                                <li class="bullets">SE2205 - Algorithms & Data Structure</li>
+                                <li class="bullets">SE2202 - Scripting Programming Language</li>
+                                <li class="bullets">MATH2151 - Discrete Structures for Engineers</li>
+                                <li class="bullets">ELI3000 - Managing Innovation Process</li>
+                                <li class="bullets">ECE2277 - Digital Logic Systems</li>
+                                <li class="bullets">ES1036 - Programming Fundamentals for Engineers</li>
+                                <li class="bullets">STATS2141 - Applied Probability and Statistics for Engineers</li>
+                                <li class="bullets">BUS1299 - Business for Engineers</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span><b>HTML</b></span> - Intermediate Proficiency</li>
+                            <li><span><b>CSS</b></span> - Intermediate Proficiency</li>
+                            <li><span><b>Java</b></span> - Intermediate Proficiency</li>
+                            <li><span><b>JavaScript</b></span> - Beginner Proficiency</li>
+                            <li><span><b>Python</b></span> - Beginner Proficiency</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Western Developer's Society<span style="color: white;">, <i>Director of Internal Events</i></span></span>
+                            <br>
+                            May 2022 - present
+                            <br>
+                            <ul>
+                                <li class="bullets">Founded and led club mentorship program to pair 30+ upper- and first-year students</li>
+                                <li class="bullets">Introduced members to avenues of employment in software development and technology, while broadening
+                                    knowledge of the industry</li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <ul>
+                            <li><span>Western Undergraduate Engineering Society<span style="color: white;">, <i>Professional Development Commissioner</i></span></span>
+                            <br>
+                            May 2022 - present
+                            <br>
+                            <ul>
+                                <li class="bullets">Planned Professional Development Conference for all 2000+ Western Engineering Students</li>
+                                <li class="bullets">Connected with Western Engineering alumni and entrepreneurs to speak as part of Alumni Panel</li>
+                                <li class="bullets">Ensure that all conference delegates have everlasting knowledge on professional development to be successful in
+                                    their customized career pathways</li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <ul>
+                            <li><span>Western Engineering Outreach<span style="color: white;">, <i>Senior Instructor</i></span></span>
+                                <br>
+                                May 2022 - Aug 2022
+                                <br>
+                            <ul>
+                                <li class="bullets">Recognized for exceptional communication of content to best engage program participants</li>
+                                <li class="bullets">Recognized for consistent positivity and strong leadership skills when promoted to acting coordinator</li>
+                                <li class="bullets">Analyzed inventory and service inefficiencies and proposed solutions to management and instructional teams</li>
+                                <li class="bullets">Utilised customer service orientation with 1800+ elementary students from grades K-8 to promote engineering
+                                    and guide them through prepared lessons, camps, and workshop activities</li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <ul>
+                            <li><span>Western Student Experience<span style="color: white;">, <i>Digital Peer Leader</i></span></span>
+                                <br>
+                                May 2022 - Aug 2022
+                                <br>
+                            <ul>
+                                <li class="bullets">Coordinated, drafted, and wrote articles and social media posts to connect with the Western student body</li>
+                                <li class="bullets">Contributed creatively to communication building in digital spaces</li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <ul>
+                            <li><span>Western Faculty of Engineering<span style="color: white;">, <i>Solid Modelling Mentor</i></span></span>
+                                <br>
+                                Oct 2021
+                                <br>
+                            <ul>
+                                <li class="bullets">Learned solid modelling part design and assembly through CAD software, Onshape, within a week</li>
+                                <li class="bullets">Developed peer relationships through assisting in a workshop of over 100 fellow first year engineering students</li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ambience.jpg">
+                    <div class="layer">
+                        <h3>Ambience</h2>
+                            <p>The Ultimate Relaxation Tool</p>
+                            <br><a href="https://devpost.com/software/ambience-wuvzo7">View Project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cyberprint.jpg">
+                    <div class="layer">
+                        <h3>CyberPrint</h2>
+                            <p>Your Guide to Digital Awareness</p>
+                            <br><a href="https://devpost.com/software/cyberprint">View Project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/reDirect.jpg">
+                    <div class="layer">
+                        <h3>reDirect</h2>
+                            <p>You deserve to be comfortable at your desk, let's reDirect</p>
+                            <br><a href="https://devpost.com/software/redirect-plbdg7">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="column" id="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>E: sthushi2@uwo.ca</p>
+                <p>P: (416) 817-2919</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/swathi-thushiyandan/">LinkedIn</a>   
+                    <a href="https://github.com/swathii-t">GitHub</a>
+                </div>
+                <p><a href="images/cv.pdf" download class="btn2">Download CV</a></p>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Swathi Thushiyandan</p>
+    <p>All rights reserved.</p>
+    <br>
+    <a href="https://www.linkedin.com/in/swathi-thushiyandan/">LinkedIn</a>   
+                <a href="https://github.com/swathii-t">GitHub</a>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sm = document.getElementById("sidemenu");
+    function openmenu() {
+        sm.style.right="0";
+    }
+    function closemenu() {
+        sm.style.right="-200px";
+    }
+</script>
+</body>
+</html>
